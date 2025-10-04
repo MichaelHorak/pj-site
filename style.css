@@ -1,28 +1,84 @@
+/* === General Reset === */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #181A1B;
+    color: #e5e5e5;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    line-height: 1.6;
 }
 
+/* === Navbar === */
 header {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
+    background-color: #000;
+    border-bottom: 1px solid #1f1f1f;
 }
 
-main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff !important;
+    letter-spacing: 0.5px;
 }
 
-section {
-    margin-bottom: 2rem;
+.navbar small {
+    color: #999;
+    font-size: 0.85rem;
 }
 
+.navbar-nav .nav-link {
+    color: #ddd !important;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e50914;
+    text-decoration: underline;
+    transform: translateY(-1px);
+}
+
+/* === Hero Section === */
+#hero-heading img {
+    border-radius: 12px;
+    border: 2px solid #1a1a1a;
+    box-shadow: 0 0 12px rgba(229, 9, 20, 0.25);
+}
+
+/* === Headings === */
+h2 {
+    color: #fff;
+    border-left: 4px solid #e50914;
+    padding-left: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+/* === Links === */
+a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff1a1a;
+    text-decoration: underline;
+}
+
+/* === Footer === */
 footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #eee;
+    background-color: #1E1E1E;
+    color: #777;
+    border-top: 1px solid #1f1f1f;
+}
+
+footer a {
+    color: #e50914;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
 }
